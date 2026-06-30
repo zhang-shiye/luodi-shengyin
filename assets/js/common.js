@@ -1,6 +1,6 @@
 /* ==============================================
-   《落地生银》官网 — 共享交互脚本
-   滚动揭示、移动端菜单、返回顶部、平滑滚动
+   《落地生银》直播展示版 — 共享交互脚本
+   滚动揭示、返回顶部、平滑滚动（无移动端菜单）
    ============================================== */
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -28,32 +28,6 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
     }, 100);
-
-    /* ---- 移动端菜单切换 ---- */
-    const menuBtn = document.getElementById("mobileMenuBtn");
-    const mobileMenu = document.getElementById("mobileMenu");
-    if (menuBtn && mobileMenu) {
-        menuBtn.addEventListener("click", () => {
-            mobileMenu.classList.toggle("open");
-            const icon = menuBtn.querySelector("i");
-            if (mobileMenu.classList.contains("open")) {
-                icon.classList.remove("fa-bars");
-                icon.classList.add("fa-xmark");
-            } else {
-                icon.classList.remove("fa-xmark");
-                icon.classList.add("fa-bars");
-            }
-        });
-        // 点击菜单链接后自动关闭
-        mobileMenu.querySelectorAll("a").forEach(link => {
-            link.addEventListener("click", () => {
-                mobileMenu.classList.remove("open");
-                const icon = menuBtn.querySelector("i");
-                icon.classList.remove("fa-xmark");
-                icon.classList.add("fa-bars");
-            });
-        });
-    }
 
     /* ---- 返回顶部按钮 ---- */
     const backToTop = document.getElementById("backToTop");
