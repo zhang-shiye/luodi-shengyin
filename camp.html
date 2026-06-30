@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=1920">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>线下跟岗实操营 — 落地生银官方认证</title>
     <meta name="description" content="24天全闭环实战：理论集训 + 两周带教 + 福利周。由河南济源标杆渠道方亲自带教，仅限2个名额。">
     <meta name="keywords" content="线下实操,跟岗培训,护理机器人实操,养老行业培训,落地生银,启航圈">
@@ -52,57 +52,65 @@
 
     <!-- ====== 全局导航栏 ====== -->
     <nav class="fixed top-0 left-0 w-full bg-white/95 backdrop-blur-md z-50 shadow-sm border-b border-gray-100">
-        <div class="max-w-[1600px] mx-auto px-10 py-4 flex justify-between items-center">
-            <a href="index.html" class="flex items-center gap-3 shrink-0 hover:opacity-80 transition">
-                <i class="fa-solid fa-leaf text-lifegreen text-3xl"></i>
-                <span class="text-bizblue text-3xl font-black tracking-widest">落地生银</span>
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2 shrink-0 hover:opacity-80 transition">
+                <i class="fa-solid fa-leaf text-lifegreen text-xl sm:text-2xl"></i>
+                <span class="text-bizblue text-xl sm:text-2xl font-black tracking-widest">落地生银</span>
             </a>
-            <div class="flex items-center gap-2 text-lg font-bold">
-                <a href="index.html" class="nav-link px-5 py-3 rounded-xl text-gray-600 hover:text-bizblue hover:bg-blue-50 transition flex items-center">
-                    <i class="fa-solid fa-house mr-2"></i>社群首页
+            <div class="desktop-nav hidden lg:flex items-center gap-2 text-sm font-bold">
+                <a href="index.html" class="nav-link px-4 py-2 rounded-lg text-gray-600 hover:text-bizblue hover:bg-blue-50 transition flex items-center">
+                    <i class="fa-solid fa-house mr-1"></i>社群首页
                 </a>
-                <a href="service.html" class="nav-link px-5 py-3 rounded-xl text-gray-600 hover:text-bizblue hover:bg-blue-50 transition flex items-center">
-                    <i class="fa-solid fa-building-user mr-2"></i>长护险B端服务
+                <a href="service.html" class="nav-link px-4 py-2 rounded-lg text-gray-600 hover:text-bizblue hover:bg-blue-50 transition flex items-center">
+                    <i class="fa-solid fa-building-user mr-1"></i>长护险B端服务
                 </a>
-                <a href="camp.html" class="nav-link nav-active px-5 py-3 rounded-xl bg-bizblue text-white shadow-md flex items-center">
-                    <i class="fa-solid fa-chalkboard-user mr-2"></i>线下实操营
+                <a href="camp.html" class="nav-link nav-active px-4 py-2 rounded-lg bg-bizblue text-white shadow-md flex items-center">
+                    <i class="fa-solid fa-chalkboard-user mr-1"></i>线下实操营
                 </a>
-                <a href="joint.html" class="nav-link px-5 py-3 rounded-xl text-gray-600 hover:text-bizblue hover:bg-blue-50 transition flex items-center">
-                    <i class="fa-solid fa-handshake-angle mr-2"></i>标杆联营开店
+                <a href="joint.html" class="nav-link px-4 py-2 rounded-lg text-gray-600 hover:text-bizblue hover:bg-blue-50 transition flex items-center">
+                    <i class="fa-solid fa-handshake-angle mr-1"></i>标杆联营开店
                 </a>
             </div>
+            <div class="hamburger"><i class="fa-solid fa-bars"></i></div>
         </div>
     </nav>
+    <div class="mobile-menu-overlay"></div>
+    <div class="mobile-menu">
+        <a href="index.html"><i class="fa-solid fa-house mr-3"></i>社群首页</a>
+        <a href="service.html"><i class="fa-solid fa-building-user mr-3"></i>长护险B端服务</a>
+        <a href="camp.html" class="nav-active"><i class="fa-solid fa-chalkboard-user mr-3"></i>线下实操营</a>
+        <a href="joint.html"><i class="fa-solid fa-handshake-angle mr-3"></i>标杆联营开店</a>
+    </div>
 
     <!-- ====== 第一屏：Hero ====== -->
-    <section class="min-h-[90vh] flex items-center justify-center relative bg-gradient-to-br from-blue-900 via-bizblue to-blue-800 text-white px-10 py-24 overflow-hidden">
+    <section class="min-h-[90vh] flex items-center justify-center relative bg-gradient-to-br from-blue-900 via-bizblue to-blue-800 text-white px-4 sm:px-6 md:px-10 py-24 overflow-hidden">
         <div class="absolute inset-0 dot-pattern opacity-10"></div>
         <div class="absolute right-0 bottom-0 w-96 h-96 bg-gold opacity-20 rounded-full blur-3xl transform translate-x-1/2 translate-y-1/2"></div>
-        <div class="max-w-[1400px] mx-auto text-center z-10 reveal mt-10">
-            <div class="inline-block px-8 py-3 rounded-full bg-danger text-white text-xl font-black mb-10 shadow-lg border-2 border-red-300 animate-pulse">
+        <div class="max-w-4xl md:max-w-5xl mx-auto text-center z-10 reveal mt-10">
+            <div class="inline-block px-4 sm:px-6 md:px-8 py-2 md:py-3 rounded-full bg-danger text-white text-base sm:text-lg md:text-xl font-black mb-6 md:mb-10 shadow-lg border-2 border-red-300 animate-pulse">
                 <i class="fa-solid fa-fire mr-2"></i>本期闭门实操营，仅限 5 个名额！
             </div>
-            <h1 class="text-7xl font-black tracking-tight leading-tight mb-10 drop-shadow-lg">
+            <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-black tracking-tight leading-tight mb-6 md:mb-10 drop-shadow-lg">
                 居家养老<span class="text-gold">"养老消费券"</span><br>线下跟岗实操营
             </h1>
-            <p class="text-3xl font-bold text-blue-100 mb-10">
+            <p class="text-lg sm:text-xl md:text-3xl font-bold text-blue-100 mb-6 md:mb-10">
                 24天全闭环实战：<span class="text-white mx-2">理论集训 + 两周带教 + 福利周</span>
             </p>
-            <div class="inline-block mt-4 bg-white/10 border-2 border-gold backdrop-blur-md px-12 py-10 rounded-3xl shadow-2xl text-left card-hover">
-                <p class="text-2xl font-black text-gold mb-5 border-b border-white/20 pb-5">
+            <div class="inline-block mt-4 bg-white/10 border-2 border-gold backdrop-blur-md px-6 sm:px-8 md:px-12 py-6 sm:py-8 md:py-10 rounded-2xl md:rounded-3xl shadow-2xl text-left card-hover">
+                <p class="text-base sm:text-lg md:text-2xl font-black text-gold mb-3 md:mb-5 border-b border-white/20 pb-3 md:pb-5">
                     <i class="fa-solid fa-crosshairs mr-2"></i>专属定向群体：【领航圈】渠道方老板
                 </p>
-                <ul class="text-xl font-bold text-gray-100 mt-5 space-y-4">
+                <ul class="text-sm sm:text-base md:text-xl font-bold text-gray-100 mt-3 md:mt-5 space-y-2 md:space-y-4">
                     <li class="flex items-start">
-                        <div class="w-8 shrink-0 flex justify-center mt-2"><i class="fa-solid fa-circle-exclamation text-red-400 text-xl"></i></div>
+                        <div class="w-6 md:w-8 shrink-0 flex justify-center mt-1 md:mt-2"><i class="fa-solid fa-circle-exclamation text-red-400 text-base md:text-xl"></i></div>
                         <div class="ml-2 leading-snug">已经成立了养老服务公司，有了牌照与场地</div>
                     </li>
                     <li class="flex items-start">
-                        <div class="w-8 shrink-0 flex justify-center mt-2"><i class="fa-solid fa-circle-exclamation text-red-400 text-xl"></i></div>
+                        <div class="w-6 md:w-8 shrink-0 flex justify-center mt-1 md:mt-2"><i class="fa-solid fa-circle-exclamation text-red-400 text-base md:text-xl"></i></div>
                         <div class="ml-2 leading-snug">眼馋本地<strong class="text-gold">"养老消费券"</strong>红利，却不知如何吃下</div>
                     </li>
                     <li class="flex items-start">
-                        <div class="w-8 shrink-0 flex justify-center mt-2"><i class="fa-solid fa-circle-check text-lifegreenLight text-xl"></i></div>
+                        <div class="w-6 md:w-8 shrink-0 flex justify-center mt-1 md:mt-2"><i class="fa-solid fa-circle-check text-lifegreenLight text-base md:text-xl"></i></div>
                         <div class="ml-2 leading-snug">亲自下场看透一线，回去直接给自己的团队下达落地指令！</div>
                     </li>
                 </ul>
@@ -111,31 +119,31 @@
     </section>
 
     <!-- ====== 第二屏：带教导师与稀缺逻辑 ====== -->
-    <section class="py-28 px-10 bg-gray-50 border-b border-gray-200">
-        <div class="max-w-[1200px] mx-auto reveal">
-            <div class="text-center mb-18">
+    <section class="py-12 md:py-28 px-4 sm:px-6 md:px-10 bg-gray-50 border-b border-gray-200">
+        <div class="max-w-4xl md:max-w-5xl mx-auto reveal">
+            <div class="text-center mb-10 md:mb-18">
                 <span class="section-eyebrow bg-yellow-100 text-yellow-700">Mentor & Scarcity</span>
-                <h2 class="text-5xl font-black text-bizblue mt-6">谁来带教？为什么只带 5 个人？</h2>
+                <h2 class="text-2xl sm:text-3xl md:text-5xl font-black text-bizblue mt-4 md:mt-6">谁来带教？为什么只带 5 个人？</h2>
             </div>
-            <div class="grid grid-cols-2 gap-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10">
                 <!-- 导师介绍 -->
-                <div class="bg-white rounded-3xl p-10 shadow-lg border-t-8 border-gold card-hover">
-                    <div class="w-16 h-16 bg-yellow-100 text-yellow-600 rounded-full flex items-center justify-center text-3xl mb-8"><i class="fa-solid fa-user-tie"></i></div>
-                    <h3 class="text-3xl font-black text-gray-800 mb-8">河南济源标杆渠道方</h3>
-                    <p class="text-xl font-bold text-gray-600 leading-relaxed">
+                <div class="bg-white rounded-2xl md:rounded-3xl p-6 sm:p-8 md:p-10 shadow-lg border-t-8 border-gold card-hover">
+                    <div class="w-12 h-12 md:w-16 md:h-16 bg-yellow-100 text-yellow-600 rounded-full flex items-center justify-center text-2xl md:text-3xl mb-5 md:mb-8"><i class="fa-solid fa-user-tie"></i></div>
+                    <h3 class="text-xl sm:text-2xl md:text-3xl font-black text-gray-800 mb-5 md:mb-8">河南济源标杆渠道方</h3>
+                    <p class="text-base sm:text-lg md:text-xl font-bold text-gray-600 leading-relaxed">
                         不讲PPT，不论虚幻理论！<br>
                         由【落地生银】社群官方指定的河南济源标杆门店掌舵人亲自带教。手把手开放自己门店的<span class="text-danger">真实客源、真实报表、真实业务流</span>，带你把消费券变现的坑全部趟平！
                     </p>
                 </div>
                 <!-- 稀缺名额 -->
-                <div class="bg-bizblue rounded-3xl p-10 shadow-lg border-t-8 border-red-500 text-white relative overflow-hidden card-hover">
-                    <i class="fa-solid fa-bomb absolute -right-10 -bottom-10 text-9xl text-white opacity-10"></i>
-                    <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center text-3xl mb-8"><i class="fa-solid fa-hand-stop"></i></div>
-                    <h3 class="text-3xl font-black mb-8">名额极度稀缺：每期限 5 人</h3>
-                    <p class="text-xl font-bold text-blue-100 leading-relaxed mb-8">
+                <div class="bg-bizblue rounded-2xl md:rounded-3xl p-6 sm:p-8 md:p-10 shadow-lg border-t-8 border-red-500 text-white relative overflow-hidden card-hover">
+                    <i class="fa-solid fa-bomb absolute -right-10 -bottom-10 text-7xl md:text-9xl text-white opacity-10"></i>
+                    <div class="w-12 h-12 md:w-16 md:h-16 bg-white/20 rounded-full flex items-center justify-center text-2xl md:text-3xl mb-5 md:mb-8"><i class="fa-solid fa-hand-stop"></i></div>
+                    <h3 class="text-xl sm:text-2xl md:text-3xl font-black mb-5 md:mb-8">名额极度稀缺：每期限 5 人</h3>
+                    <p class="text-base sm:text-lg md:text-xl font-bold text-blue-100 leading-relaxed mb-5 md:mb-8">
                         老板平时的实体店业务<strong class="text-gold">极其繁忙</strong>，为了保证带教质量，精力仅能覆盖 5 位学员。
                     </p>
-                    <p class="text-xl font-bold text-white leading-relaxed">
+                    <p class="text-base sm:text-lg md:text-xl font-bold text-white leading-relaxed">
                         我们要的是：来一个成一个。<br>
                         <span class="highlight-gold text-white">只带教老板和店长！</span>
                     </p>
@@ -145,39 +153,39 @@
     </section>
 
     <!-- ====== 第三屏：24天排期表 ====== -->
-    <section class="py-28 px-10 bg-slate-900 text-white relative">
+    <section class="py-12 md:py-28 px-4 sm:px-6 md:px-10 bg-slate-900 text-white relative">
         <div class="absolute inset-0 dot-pattern opacity-20"></div>
-        <div class="max-w-[1200px] mx-auto reveal relative z-10">
-            <div class="text-center mb-18">
+        <div class="max-w-4xl md:max-w-5xl mx-auto reveal relative z-10">
+            <div class="text-center mb-10 md:mb-18">
                 <span class="section-eyebrow bg-white/10 text-gold border border-gold/30">1 Month Bootcamp</span>
-                <h2 class="text-5xl font-black text-white mt-6"><span class="highlight-gold">24天（一个月）沉浸式排期表</span></h2>
-                <p class="text-2xl text-gray-400 mt-5 font-medium">从底层逻辑到一线体感，手把手带你跑通单店模型</p>
+                <h2 class="text-2xl sm:text-3xl md:text-5xl font-black text-white mt-4 md:mt-6"><span class="highlight-gold">24天（一个月）沉浸式排期表</span></h2>
+                <p class="text-base sm:text-lg md:text-2xl text-gray-400 mt-3 md:mt-5 font-medium">从底层逻辑到一线体感，手把手带你跑通单店模型</p>
             </div>
-            <div class="space-y-8">
+            <div class="space-y-4 md:space-y-8">
                 <!-- 阶段1 -->
-                <div class="flex items-start bg-white/10 p-10 rounded-3xl border border-white/20 card-hover">
-                    <div class="w-56 flex-shrink-0 border-r border-gray-600 pr-10">
-                        <div class="text-5xl font-black text-gold mb-2">3 天</div>
-                        <div class="text-xl font-bold text-gray-300">第 1-3 天</div>
+                <div class="flex flex-col md:flex-row items-start bg-white/10 p-5 sm:p-6 md:p-10 rounded-2xl md:rounded-3xl border border-white/20 card-hover">
+                    <div class="w-full md:w-56 flex-shrink-0 md:border-r border-gray-600 md:pr-10 pb-4 md:pb-0 border-b md:border-b-0">
+                        <div class="text-3xl sm:text-4xl md:text-5xl font-black text-gold mb-2">3 天</div>
+                        <div class="text-base md:text-xl font-bold text-gray-300">第 1-3 天</div>
                     </div>
-                    <div class="pl-10">
-                        <h3 class="text-3xl font-black text-white mb-5"><i class="fa-solid fa-door-closed text-bizblueLight mr-3"></i>关门理论集训</h3>
-                        <p class="text-xl text-gray-300 leading-relaxed font-medium">
+                    <div class="md:pl-10 pt-2 md:pt-0">
+                        <h3 class="text-xl sm:text-2xl md:text-3xl font-black text-white mb-3 md:mb-5"><i class="fa-solid fa-door-closed text-bizblueLight mr-3"></i>关门理论集训</h3>
+                        <p class="text-base md:text-xl text-gray-300 leading-relaxed font-medium">
                             死磕政府补贴逻辑，深度拆解<span class="text-gold">"养老消费券"</span>变现通路。<br>
                             剖析成熟门店真实利润账本，打通养老消费卷闭环认知。
                         </p>
                     </div>
                 </div>
                 <!-- 阶段2 -->
-                <div class="flex items-start bg-blue-900/40 p-10 rounded-3xl border border-blue-500/30 card-hover relative overflow-hidden">
-                    <div class="absolute top-0 right-0 bg-blue-600 text-white px-6 py-2 rounded-bl-2xl font-bold text-base shadow-lg"><i class="fa-solid fa-star text-gold mr-1"></i>核心环节</div>
-                    <div class="w-56 flex-shrink-0 border-r border-blue-500/50 pr-10">
-                        <div class="text-5xl font-black text-blue-400 mb-2">2 周</div>
-                        <div class="text-xl font-bold text-gray-300">第 4-17 天</div>
+                <div class="flex flex-col md:flex-row items-start bg-blue-900/40 p-5 sm:p-6 md:p-10 rounded-2xl md:rounded-3xl border border-blue-500/30 card-hover relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-blue-600 text-white px-4 md:px-6 py-1.5 md:py-2 rounded-bl-xl md:rounded-bl-2xl font-bold text-sm md:text-base shadow-lg"><i class="fa-solid fa-star text-gold mr-1"></i>核心环节</div>
+                    <div class="w-full md:w-56 flex-shrink-0 md:border-r border-blue-500/50 md:pr-10 pb-4 md:pb-0 border-b md:border-b-0">
+                        <div class="text-3xl sm:text-4xl md:text-5xl font-black text-blue-400 mb-2">2 周</div>
+                        <div class="text-base md:text-xl font-bold text-gray-300">第 4-17 天</div>
                     </div>
-                    <div class="pl-10">
-                        <h3 class="text-3xl font-black text-white mb-5"><i class="fa-solid fa-street-view text-blue-400 mr-3"></i>标杆门店真实跟岗</h3>
-                        <p class="text-xl text-gray-300 leading-relaxed font-medium">
+                    <div class="md:pl-10 pt-2 md:pt-0">
+                        <h3 class="text-xl sm:text-2xl md:text-3xl font-black text-white mb-3 md:mb-5"><i class="fa-solid fa-street-view text-blue-400 mr-3"></i>标杆门店真实跟岗</h3>
+                        <p class="text-base md:text-xl text-gray-300 leading-relaxed font-medium">
                             换上工装，老总亲自带你<span class="text-gold">下沉业务一线</span>！<br>
                             全程跟进早会派单、进店接待、逼单转化、入户服务标准演练。<br>
                             老板自己懂了一线，回去后面对手下的团队，指令才能下得精准狠！
@@ -185,27 +193,27 @@
                     </div>
                 </div>
                 <!-- 阶段3 -->
-                <div class="flex items-start bg-gradient-to-r from-yellow-900/40 to-red-900/40 p-10 rounded-3xl border border-gold/40 card-hover relative">
-                    <div class="absolute top-0 right-0 bg-danger text-white px-6 py-2 rounded-bl-2xl font-bold text-base shadow-lg"><i class="fa-solid fa-gift mr-1"></i>可选修福利</div>
-                    <div class="w-56 flex-shrink-0 border-r border-gold/50 pr-10">
-                        <div class="text-5xl font-black text-gold mb-2">1 周</div>
-                        <div class="text-xl font-bold text-gray-300">第 18-24 天</div>
+                <div class="flex flex-col md:flex-row items-start bg-gradient-to-r from-yellow-900/40 to-red-900/40 p-5 sm:p-6 md:p-10 rounded-2xl md:rounded-3xl border border-gold/40 card-hover relative">
+                    <div class="absolute top-0 right-0 bg-danger text-white px-4 md:px-6 py-1.5 md:py-2 rounded-bl-xl md:rounded-bl-2xl font-bold text-sm md:text-base shadow-lg"><i class="fa-solid fa-gift mr-1"></i>可选修福利</div>
+                    <div class="w-full md:w-56 flex-shrink-0 md:border-r border-gold/50 md:pr-10 pb-4 md:pb-0 border-b md:border-b-0">
+                        <div class="text-3xl sm:text-4xl md:text-5xl font-black text-gold mb-2">1 周</div>
+                        <div class="text-base md:text-xl font-bold text-gray-300">第 18-24 天</div>
                     </div>
-                    <div class="pl-10 w-full">
-                        <h3 class="text-3xl font-black text-gold mb-5"><i class="fa-solid fa-gem mr-3"></i>额外增值福利周</h3>
-                        <p class="text-lg text-gray-300 leading-relaxed font-medium mb-8">（赠送环节，学员可自由选择是否留下听课）</p>
-                        <div class="grid grid-cols-3 gap-6">
-                            <div class="bg-black/20 p-6 rounded-xl border border-white/10">
-                                <div class="text-xl font-bold text-yellow-300 mb-3"><i class="fa-solid fa-id-card"></i> 考证渠道建立</div>
-                                <div class="text-base text-gray-400 font-medium">打通各类证书办理门路，解决合规痛点。</div>
+                    <div class="md:pl-10 pt-2 md:pt-0 w-full">
+                        <h3 class="text-xl sm:text-2xl md:text-3xl font-black text-gold mb-3 md:mb-5"><i class="fa-solid fa-gem mr-3"></i>额外增值福利周</h3>
+                        <p class="text-sm md:text-lg text-gray-300 leading-relaxed font-medium mb-5 md:mb-8">（赠送环节，学员可自由选择是否留下听课）</p>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
+                            <div class="bg-black/20 p-4 md:p-6 rounded-xl border border-white/10">
+                                <div class="text-base md:text-xl font-bold text-yellow-300 mb-2 md:mb-3"><i class="fa-solid fa-id-card"></i> 考证渠道建立</div>
+                                <div class="text-sm md:text-base text-gray-400 font-medium">打通各类证书办理门路，解决合规痛点。</div>
                             </div>
-                            <div class="bg-black/20 p-6 rounded-xl border border-white/10">
-                                <div class="text-xl font-bold text-yellow-300 mb-3"><i class="fa-solid fa-user-nurse"></i> 职业培训实操</div>
-                                <div class="text-base text-gray-400 font-medium">长护师/护理员培训。支持内部员工专业提升。</div>
+                            <div class="bg-black/20 p-4 md:p-6 rounded-xl border border-white/10">
+                                <div class="text-base md:text-xl font-bold text-yellow-300 mb-2 md:mb-3"><i class="fa-solid fa-user-nurse"></i> 职业培训实操</div>
+                                <div class="text-sm md:text-base text-gray-400 font-medium">长护师/护理员培训。支持内部员工专业提升。</div>
                             </div>
-                            <div class="bg-black/20 p-6 rounded-xl border border-white/10">
-                                <div class="text-xl font-bold text-yellow-300 mb-3"><i class="fa-solid fa-mobile-screen"></i> 新媒体本地运营</div>
-                                <div class="text-base text-gray-400 font-medium">教你如何用同城短视频撬动本地精准流量。</div>
+                            <div class="bg-black/20 p-4 md:p-6 rounded-xl border border-white/10">
+                                <div class="text-base md:text-xl font-bold text-yellow-300 mb-2 md:mb-3"><i class="fa-solid fa-mobile-screen"></i> 新媒体本地运营</div>
+                                <div class="text-sm md:text-base text-gray-400 font-medium">教你如何用同城短视频撬动本地精准流量。</div>
                             </div>
                         </div>
                     </div>
@@ -215,44 +223,44 @@
     </section>
 
     <!-- ====== 第四屏：核心模块 ====== -->
-    <section class="py-28 px-10 bg-white">
-        <div class="max-w-[1400px] mx-auto">
-            <div class="text-center mb-18 reveal">
+    <section class="py-12 md:py-28 px-4 sm:px-6 md:px-10 bg-white">
+        <div class="max-w-5xl md:max-w-6xl mx-auto">
+            <div class="text-center mb-10 md:mb-18 reveal">
                 <span class="section-eyebrow bg-blue-100 text-bizblue">Core Modules</span>
-                <h2 class="text-5xl font-black text-bizblue mt-6">不讲空话 · 核心模块全景揭秘</h2>
+                <h2 class="text-2xl sm:text-3xl md:text-5xl font-black text-bizblue mt-4 md:mt-6">不讲空话 · 核心模块全景揭秘</h2>
             </div>
-            <div class="grid grid-cols-3 gap-10">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-10">
                 <!-- 模块一 -->
-                <div class="bg-gray-50 rounded-3xl p-10 reveal delay-100 border border-gray-200 card-hover">
-                    <div class="w-16 h-16 bg-blue-100 text-bizblue rounded-2xl flex items-center justify-center text-3xl mb-8"><i class="fa-solid fa-chart-pie"></i></div>
-                    <h3 class="text-2xl font-black text-bizblue mb-8">政策变现与真实账本</h3>
-                    <ul class="space-y-5 text-xl font-bold text-gray-700">
-                        <li class="flex items-start"><div class="w-8 shrink-0 flex justify-center mt-1"><i class="fa-solid fa-check text-lifegreen"></i></div><div class="ml-2 leading-snug">抢跑入围长护险评选标准</div></li>
-                        <li class="flex items-start"><div class="w-8 shrink-0 flex justify-center mt-1"><i class="fa-solid fa-check text-lifegreen"></i></div><div class="ml-2 leading-snug">养老消费券合规运行真流水</div></li>
-                        <li class="flex items-start"><div class="w-8 shrink-0 flex justify-center mt-1"><i class="fa-solid fa-check text-lifegreen"></i></div><div class="ml-2 leading-snug">拆解成熟门店真实净利账本</div></li>
-                        <li class="flex items-start"><div class="w-8 shrink-0 flex justify-center mt-1"><i class="fa-solid fa-check text-lifegreen"></i></div><div class="ml-2 leading-snug">100项核查清单与结算避坑</div></li>
+                <div class="bg-gray-50 rounded-2xl md:rounded-3xl p-6 sm:p-8 md:p-10 reveal delay-100 border border-gray-200 card-hover">
+                    <div class="w-12 h-12 md:w-16 md:h-16 bg-blue-100 text-bizblue rounded-2xl flex items-center justify-center text-2xl md:text-3xl mb-5 md:mb-8"><i class="fa-solid fa-chart-pie"></i></div>
+                    <h3 class="text-xl md:text-2xl font-black text-bizblue mb-5 md:mb-8">政策变现与真实账本</h3>
+                    <ul class="space-y-3 md:space-y-5 text-base md:text-xl font-bold text-gray-700">
+                        <li class="flex items-start"><div class="w-6 md:w-8 shrink-0 flex justify-center mt-1"><i class="fa-solid fa-check text-lifegreen"></i></div><div class="ml-2 leading-snug">抢跑入围长护险评选标准</div></li>
+                        <li class="flex items-start"><div class="w-6 md:w-8 shrink-0 flex justify-center mt-1"><i class="fa-solid fa-check text-lifegreen"></i></div><div class="ml-2 leading-snug">养老消费券合规运行真流水</div></li>
+                        <li class="flex items-start"><div class="w-6 md:w-8 shrink-0 flex justify-center mt-1"><i class="fa-solid fa-check text-lifegreen"></i></div><div class="ml-2 leading-snug">拆解成熟门店真实净利账本</div></li>
+                        <li class="flex items-start"><div class="w-6 md:w-8 shrink-0 flex justify-center mt-1"><i class="fa-solid fa-check text-lifegreen"></i></div><div class="ml-2 leading-snug">100项核查清单与结算避坑</div></li>
                     </ul>
                 </div>
                 <!-- 模块二 -->
-                <div class="bg-gray-50 rounded-3xl p-10 reveal delay-200 border border-gray-200 card-hover">
-                    <div class="w-16 h-16 bg-green-100 text-lifegreen rounded-2xl flex items-center justify-center text-3xl mb-8"><i class="fa-solid fa-users-rays"></i></div>
-                    <h3 class="text-2xl font-black text-lifegreen mb-8">流量获客与团队机制</h3>
-                    <ul class="space-y-5 text-xl font-bold text-gray-700">
-                        <li class="flex items-start"><div class="w-8 shrink-0 flex justify-center mt-1"><i class="fa-solid fa-check text-bizblue"></i></div><div class="ml-2 leading-snug">社区地推与零成本老带新</div></li>
-                        <li class="flex items-start"><div class="w-8 shrink-0 flex justify-center mt-1"><i class="fa-solid fa-check text-bizblue"></i></div><div class="ml-2 leading-snug">梯度套餐与叠加营销逼单</div></li>
-                        <li class="flex items-start"><div class="w-8 shrink-0 flex justify-center mt-1"><i class="fa-solid fa-check text-bizblue"></i></div><div class="ml-2 leading-snug">阶梯式底薪与防飞单机制</div></li>
-                        <li class="flex items-start"><div class="w-8 shrink-0 flex justify-center mt-1"><i class="fa-solid fa-check text-bizblue"></i></div><div class="ml-2 leading-snug">招募并稳住踏实听话护理员</div></li>
+                <div class="bg-gray-50 rounded-2xl md:rounded-3xl p-6 sm:p-8 md:p-10 reveal delay-200 border border-gray-200 card-hover">
+                    <div class="w-12 h-12 md:w-16 md:h-16 bg-green-100 text-lifegreen rounded-2xl flex items-center justify-center text-2xl md:text-3xl mb-5 md:mb-8"><i class="fa-solid fa-users-rays"></i></div>
+                    <h3 class="text-xl md:text-2xl font-black text-lifegreen mb-5 md:mb-8">流量获客与团队机制</h3>
+                    <ul class="space-y-3 md:space-y-5 text-base md:text-xl font-bold text-gray-700">
+                        <li class="flex items-start"><div class="w-6 md:w-8 shrink-0 flex justify-center mt-1"><i class="fa-solid fa-check text-bizblue"></i></div><div class="ml-2 leading-snug">社区地推与零成本老带新</div></li>
+                        <li class="flex items-start"><div class="w-6 md:w-8 shrink-0 flex justify-center mt-1"><i class="fa-solid fa-check text-bizblue"></i></div><div class="ml-2 leading-snug">梯度套餐与叠加营销逼单</div></li>
+                        <li class="flex items-start"><div class="w-6 md:w-8 shrink-0 flex justify-center mt-1"><i class="fa-solid fa-check text-bizblue"></i></div><div class="ml-2 leading-snug">阶梯式底薪与防飞单机制</div></li>
+                        <li class="flex items-start"><div class="w-6 md:w-8 shrink-0 flex justify-center mt-1"><i class="fa-solid fa-check text-bizblue"></i></div><div class="ml-2 leading-snug">招募并稳住踏实听话护理员</div></li>
                     </ul>
                 </div>
                 <!-- 模块三 -->
-                <div class="bg-gray-50 rounded-3xl p-10 reveal delay-300 border border-gray-200 card-hover">
-                    <div class="w-16 h-16 bg-red-100 text-danger rounded-2xl flex items-center justify-center text-3xl mb-8"><i class="fa-solid fa-shield-cat"></i></div>
-                    <h3 class="text-2xl font-black text-danger mb-8">风控保命与未来延展</h3>
-                    <ul class="space-y-5 text-xl font-bold text-gray-700">
-                        <li class="flex items-start"><div class="w-8 shrink-0 flex justify-center mt-1"><i class="fa-solid fa-check text-gold"></i></div><div class="ml-2 leading-snug">法律协议与用工风险隔离</div></li>
-                        <li class="flex items-start"><div class="w-8 shrink-0 flex justify-center mt-1"><i class="fa-solid fa-check text-gold"></i></div><div class="ml-2 leading-snug">客诉化解三板斧机制</div></li>
-                        <li class="flex items-start"><div class="w-8 shrink-0 flex justify-center mt-1"><i class="fa-solid fa-check text-gold"></i></div><div class="ml-2 leading-snug">耗材采购底价供应商清单</div></li>
-                        <li class="flex items-start"><div class="w-8 shrink-0 flex justify-center mt-1"><i class="fa-solid fa-check text-gold"></i></div><div class="ml-2 leading-snug">政企托管与上下游衍生变现</div></li>
+                <div class="bg-gray-50 rounded-2xl md:rounded-3xl p-6 sm:p-8 md:p-10 reveal delay-300 border border-gray-200 card-hover">
+                    <div class="w-12 h-12 md:w-16 md:h-16 bg-red-100 text-danger rounded-2xl flex items-center justify-center text-2xl md:text-3xl mb-5 md:mb-8"><i class="fa-solid fa-shield-cat"></i></div>
+                    <h3 class="text-xl md:text-2xl font-black text-danger mb-5 md:mb-8">风控保命与未来延展</h3>
+                    <ul class="space-y-3 md:space-y-5 text-base md:text-xl font-bold text-gray-700">
+                        <li class="flex items-start"><div class="w-6 md:w-8 shrink-0 flex justify-center mt-1"><i class="fa-solid fa-check text-gold"></i></div><div class="ml-2 leading-snug">法律协议与用工风险隔离</div></li>
+                        <li class="flex items-start"><div class="w-6 md:w-8 shrink-0 flex justify-center mt-1"><i class="fa-solid fa-check text-gold"></i></div><div class="ml-2 leading-snug">客诉化解三板斧机制</div></li>
+                        <li class="flex items-start"><div class="w-6 md:w-8 shrink-0 flex justify-center mt-1"><i class="fa-solid fa-check text-gold"></i></div><div class="ml-2 leading-snug">耗材采购底价供应商清单</div></li>
+                        <li class="flex items-start"><div class="w-6 md:w-8 shrink-0 flex justify-center mt-1"><i class="fa-solid fa-check text-gold"></i></div><div class="ml-2 leading-snug">政企托管与上下游衍生变现</div></li>
                     </ul>
                 </div>
             </div>
@@ -260,35 +268,35 @@
     </section>
 
     <!-- ====== 第五屏：促单与资产交付 ====== -->
-    <section class="py-28 px-10 bg-gradient-to-t from-gray-100 to-white">
-        <div class="max-w-[1200px] mx-auto text-center reveal">
-            <div class="text-center mb-14">
+    <section class="py-12 md:py-28 px-4 sm:px-6 md:px-10 bg-gradient-to-t from-gray-100 to-white">
+        <div class="max-w-4xl md:max-w-5xl mx-auto text-center reveal">
+            <div class="text-center mb-10 md:mb-14">
                 <span class="section-eyebrow bg-yellow-100 text-yellow-700">Deliverables</span>
-                <h2 class="text-5xl font-black text-bizblue mt-6">学费 19,800 元，你能带走什么？</h2>
+                <h2 class="text-2xl sm:text-3xl md:text-5xl font-black text-bizblue mt-4 md:mt-6">学费 19,800 元，你能带走什么？</h2>
             </div>
-            <div class="bg-white border-4 border-gold rounded-3xl p-12 shadow-2xl relative">
-                <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-gold text-white px-10 py-3 rounded-full text-2xl font-black shadow-lg whitespace-nowrap">
+            <div class="bg-white border-2 md:border-4 border-gold rounded-2xl md:rounded-3xl p-6 sm:p-8 md:p-12 shadow-2xl relative">
+                <div class="absolute -top-3 md:-top-4 left-1/2 transform -translate-x-1/2 bg-gold text-white px-6 md:px-10 py-2 md:py-3 rounded-full text-base md:text-2xl font-black shadow-lg whitespace-nowrap">
                     <i class="fa-solid fa-box-archive mr-2"></i>六大核心落地资产
                 </div>
-                <ul class="text-left space-y-8 mt-10 text-xl font-bold text-gray-800 grid grid-cols-2 gap-x-14 gap-y-8">
-                    <li class="flex items-center"><div class="w-10 shrink-0 flex justify-center"><i class="fa-solid fa-file-excel text-green-600 text-3xl"></i></div><div class="ml-4">365天一对一商业答疑</div></li>
-                    <li class="flex items-start"><div class="w-10 shrink-0 flex justify-center mt-1"><i class="fa-solid fa-file-word text-blue-600 text-3xl"></i></div><div class="ml-2">《招投标核心素材库》</div></li>
-                    <li class="flex items-start"><div class="w-10 shrink-0 flex justify-center mt-1"><i class="fa-solid fa-scale-balanced text-gray-600 text-3xl"></i></div><div class="ml-2">《法务合规免责合同文件库》</div></li>
-                    <li class="flex items-start"><div class="w-10 shrink-0 flex justify-center mt-1"><i class="fa-solid fa-book-medical text-red-500 text-3xl"></i></div><div class="ml-2">《入户服务SOP与急救指南》</div></li>
-                    <li class="flex items-start"><div class="w-10 shrink-0 flex justify-center mt-1"><i class="fa-solid fa-folder-open text-yellow-600 text-3xl"></i></div><div class="ml-2">《门店标准台账1:1复刻表》</div></li>
-                    <li class="flex items-start"><div class="w-10 shrink-0 flex justify-center mt-1"><i class="fa-solid fa-calculator text-indigo-600 text-3xl"></i></div><div class="ml-2">《全岗位KPI考核与薪酬制度》</div></li>
+                <ul class="text-left space-y-4 md:space-y-8 mt-6 md:mt-10 text-base md:text-xl font-bold text-gray-800 grid grid-cols-1 md:grid-cols-2 gap-x-6 md:gap-x-14 gap-y-4 md:gap-y-8">
+                    <li class="flex items-center"><div class="w-8 md:w-10 shrink-0 flex justify-center"><i class="fa-solid fa-file-excel text-green-600 text-2xl md:text-3xl"></i></div><div class="ml-3 md:ml-4">365天一对一商业答疑</div></li>
+                    <li class="flex items-start"><div class="w-8 md:w-10 shrink-0 flex justify-center mt-1"><i class="fa-solid fa-file-word text-blue-600 text-2xl md:text-3xl"></i></div><div class="ml-2">《招投标核心素材库》</div></li>
+                    <li class="flex items-start"><div class="w-8 md:w-10 shrink-0 flex justify-center mt-1"><i class="fa-solid fa-scale-balanced text-gray-600 text-2xl md:text-3xl"></i></div><div class="ml-2">《法务合规免责合同文件库》</div></li>
+                    <li class="flex items-start"><div class="w-8 md:w-10 shrink-0 flex justify-center mt-1"><i class="fa-solid fa-book-medical text-red-500 text-2xl md:text-3xl"></i></div><div class="ml-2">《入户服务SOP与急救指南》</div></li>
+                    <li class="flex items-start"><div class="w-8 md:w-10 shrink-0 flex justify-center mt-1"><i class="fa-solid fa-folder-open text-yellow-600 text-2xl md:text-3xl"></i></div><div class="ml-2">《门店标准台账1:1复刻表》</div></li>
+                    <li class="flex items-start"><div class="w-8 md:w-10 shrink-0 flex justify-center mt-1"><i class="fa-solid fa-calculator text-indigo-600 text-2xl md:text-3xl"></i></div><div class="ml-2">《全岗位KPI考核与薪酬制度》</div></li>
                 </ul>
             </div>
-            <div class="mt-18">
-                <div class="inline-block bg-red-50 border border-red-200 px-10 py-6 rounded-2xl mb-10 shadow-sm text-left">
-                    <p class="text-2xl font-bold text-gray-700 mb-4 animate-pulse"><i class="fa-solid fa-gift text-danger mr-2"></i>本期限量 5 个名额，报名即送：</p>
-                    <p class="text-xl font-black text-danger">
+            <div class="mt-12 md:mt-18">
+                <div class="inline-block bg-red-50 border border-red-200 px-5 sm:px-8 md:px-10 py-4 md:py-6 rounded-2xl mb-6 md:mb-10 shadow-sm text-left">
+                    <p class="text-base sm:text-lg md:text-2xl font-bold text-gray-700 mb-3 md:mb-4 animate-pulse"><i class="fa-solid fa-gift text-danger mr-2"></i>本期限量 5 个名额，报名即送：</p>
+                    <p class="text-sm sm:text-base md:text-xl font-black text-danger">
                         1. 专项增值课：《失能等级评估中心申请与盈利揭秘》<br>
                         2. 免费赠送《落地生银》社群【领航圈】两年会员资格！
                     </p>
                 </div>
                 <div>
-                    <button class="bg-danger hover:bg-red-700 text-white text-2xl font-black py-5 px-16 rounded-full shadow-2xl transition hover:scale-105 flex items-center justify-center mx-auto animate-pulse">
+                    <button class="bg-danger hover:bg-red-700 text-white text-lg sm:text-xl md:text-2xl font-black py-3 md:py-5 px-8 md:px-16 rounded-full shadow-2xl transition hover:scale-105 flex items-center justify-center mx-auto animate-pulse">
                         <span>抢占最后 2 个老总席位</span><i class="fa-solid fa-arrow-right ml-3"></i>
                     </button>
                 </div>
@@ -300,21 +308,21 @@
     <div id="backToTop" class="back-to-top"><i class="fa-solid fa-arrow-up"></i></div>
 
     <!-- ====== 页脚 ====== -->
-    <footer class="bg-slate-900 text-gray-400 py-14">
-        <div class="max-w-[1400px] mx-auto px-10">
-            <div class="flex justify-between items-center">
-                <div class="flex items-center gap-3">
-                    <i class="fa-solid fa-leaf text-lifegreen text-3xl"></i>
-                    <span class="text-white text-2xl font-black tracking-widest">落地生银</span>
+    <footer class="bg-slate-900 text-gray-400 py-8 md:py-14">
+        <div class="max-w-5xl md:max-w-6xl mx-auto px-4 sm:px-6 md:px-10">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4 md:gap-0">
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-leaf text-lifegreen text-xl md:text-3xl"></i>
+                    <span class="text-white text-lg md:text-2xl font-black tracking-widest">落地生银</span>
                 </div>
-                <div class="flex gap-8 text-lg font-medium">
+                <div class="flex flex-wrap justify-center gap-4 md:gap-8 text-sm md:text-lg font-medium">
                     <a href="index.html" class="hover:text-white transition">社群首页</a>
                     <a href="service.html" class="hover:text-white transition">长护险B端服务</a>
                     <a href="camp.html" class="hover:text-white transition">线下实操营</a>
                     <a href="joint.html" class="hover:text-white transition">标杆联营开店</a>
                 </div>
             </div>
-            <div class="border-t border-white/10 mt-10 pt-10 text-center text-base">
+            <div class="border-t border-white/10 mt-6 md:mt-10 pt-6 md:pt-10 text-center text-xs md:text-base">
                 <p>&copy; 2026 《落地生银》银发经济创业实战社群. All Rights Reserved.</p>
             </div>
         </div>

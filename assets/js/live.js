@@ -1,34 +1,9 @@
 /* ==============================================
-   《落地生银》手机分享版 — 共享交互脚本
-   滚动揭示、返回顶部、移动端汉堡菜单、平滑滚动
+   《落地生银》直播展示版 — 共享交互脚本
+   滚动揭示、返回顶部、平滑滚动（无移动端菜单）
    ============================================== */
 
 document.addEventListener("DOMContentLoaded", () => {
-
-    /* ---- 汉堡菜单 ---- */
-    const hamburger = document.querySelector(".hamburger");
-    const mobileMenu = document.querySelector(".mobile-menu");
-    const overlay = document.querySelector(".mobile-menu-overlay");
-
-    if (hamburger && mobileMenu && overlay) {
-        const toggleMenu = () => {
-            hamburger.classList.toggle("active");
-            mobileMenu.classList.toggle("open");
-            overlay.classList.toggle("open");
-            // 防止背景滚动
-            document.body.style.overflow = mobileMenu.classList.contains("open") ? "hidden" : "";
-        };
-
-        hamburger.addEventListener("click", toggleMenu);
-        overlay.addEventListener("click", toggleMenu);
-
-        // 点击菜单链接后自动关闭
-        mobileMenu.querySelectorAll("a").forEach(link => {
-            link.addEventListener("click", () => {
-                toggleMenu();
-            });
-        });
-    }
 
     /* ---- 滚动揭示动画 ---- */
     const reveals = document.querySelectorAll(".reveal");
@@ -39,8 +14,8 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
     }, {
-        threshold: 0.1,
-        rootMargin: "0px 0px -30px 0px"
+        threshold: 0.12,
+        rootMargin: "0px 0px -50px 0px"
     });
     reveals.forEach(el => revealOnScroll.observe(el));
 
@@ -58,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const backToTop = document.getElementById("backToTop");
     if (backToTop) {
         window.addEventListener("scroll", () => {
-            if (window.scrollY > 300) {
+            if (window.scrollY > 400) {
                 backToTop.classList.add("visible");
             } else {
                 backToTop.classList.remove("visible");

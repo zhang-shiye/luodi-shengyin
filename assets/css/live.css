@@ -1,6 +1,6 @@
 /* ==============================================
-   《落地生银》手机分享版 — 共享样式表
-   响应式设计，适配手机/平板/桌面
+   《落地生银》直播展示版 — 共享样式表
+   针对大屏投影/直播场景优化，无移动端适配
    ============================================== */
 
 :root {
@@ -26,21 +26,21 @@ body {
     background-color: var(--color-bg);
     color: #1e293b;
     line-height: 1.8;
-    padding-top: 4.5rem;
+    padding-top: 5rem;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
 /* ---- 自定义滚动条 ---- */
 ::-webkit-scrollbar {
-    width: 8px;
+    width: 10px;
 }
 ::-webkit-scrollbar-track {
     background: #e2e8f0;
 }
 ::-webkit-scrollbar-thumb {
     background: linear-gradient(to bottom, var(--color-primary), var(--color-primary-light));
-    border-radius: 4px;
+    border-radius: 5px;
 }
 ::-webkit-scrollbar-thumb:hover {
     background: var(--color-primary-light);
@@ -49,8 +49,8 @@ body {
 /* ---- 滚动揭示动画 ---- */
 .reveal {
     opacity: 0;
-    transform: translateY(40px);
-    transition: opacity 0.7s cubic-bezier(0.5, 0, 0, 1), transform 0.7s cubic-bezier(0.5, 0, 0, 1);
+    transform: translateY(60px);
+    transition: opacity 0.8s cubic-bezier(0.5, 0, 0, 1), transform 0.8s cubic-bezier(0.5, 0, 0, 1);
 }
 .reveal.active {
     opacity: 1;
@@ -84,18 +84,18 @@ body {
 /* ---- 返回顶部按钮 ---- */
 .back-to-top {
     position: fixed;
-    bottom: 1.5rem;
-    right: 1.5rem;
+    bottom: 2.5rem;
+    right: 2.5rem;
     z-index: 60;
-    width: 3rem;
-    height: 3rem;
+    width: 3.5rem;
+    height: 3.5rem;
     background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
     color: white;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1rem;
+    font-size: 1.25rem;
     cursor: pointer;
     opacity: 0;
     visibility: hidden;
@@ -134,83 +134,12 @@ body {
     width: 60%;
 }
 
-/* ---- 汉堡菜单按钮 ---- */
-.hamburger {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 2.5rem;
-    height: 2.5rem;
-    cursor: pointer;
-    z-index: 70;
-}
-.hamburger i {
-    font-size: 1.5rem;
-    color: var(--color-primary);
-    transition: transform 0.3s ease;
-}
-.hamburger.active i {
-    transform: rotate(90deg);
-}
-
-/* ---- 移动端侧滑菜单 ---- */
-.mobile-menu {
-    position: fixed;
-    top: 0;
-    right: -100%;
-    width: 75%;
-    max-width: 320px;
-    height: 100vh;
-    background: white;
-    z-index: 65;
-    padding: 5rem 2rem 2rem;
-    transition: right 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: -10px 0 30px rgba(0, 0, 0, 0.15);
-    overflow-y: auto;
-}
-.mobile-menu.open {
-    right: 0;
-}
-.mobile-menu-overlay {
-    position: fixed;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.4);
-    z-index: 64;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.35s ease, visibility 0.35s ease;
-}
-.mobile-menu-overlay.open {
-    opacity: 1;
-    visibility: visible;
-}
-.mobile-menu a {
-    display: flex;
-    align-items: center;
-    padding: 1rem 1.5rem;
-    border-radius: 0.75rem;
-    font-size: 1.1rem;
-    font-weight: 700;
-    color: #475569;
-    transition: all 0.2s ease;
-    margin-bottom: 0.5rem;
-}
-.mobile-menu a:hover, .mobile-menu a.nav-active {
-    background: #eff6ff;
-    color: var(--color-primary);
-}
-.mobile-menu a.nav-active {
-    background: var(--color-primary);
-    color: white;
-    box-shadow: 0 4px 12px rgba(30, 58, 138, 0.3);
-}
-
-/* ---- 卡片悬浮效果 ---- */
+/* ---- 卡片悬浮效果增强 ---- */
 .card-hover {
     transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .card-hover:hover {
-    transform: translateY(-6px);
+    transform: translateY(-8px);
     box-shadow: var(--shadow-hover);
 }
 
@@ -229,36 +158,11 @@ body {
 /* ---- 章节标题装饰线 ---- */
 .section-eyebrow {
     display: inline-block;
-    padding: 0.4rem 1.2rem;
+    padding: 0.5rem 1.5rem;
     border-radius: 9999px;
-    font-size: 0.85rem;
+    font-size: 1.25rem;
     font-weight: 700;
     letter-spacing: 0.1em;
-}
-
-@media (min-width: 768px) {
-    .section-eyebrow {
-        padding: 0.5rem 1.5rem;
-        font-size: 1rem;
-    }
-}
-
-/* ---- 隐藏桌面端导航中的链接 (仅移动端汉堡菜单可见) ---- */
-@media (max-width: 768px) {
-    .desktop-nav {
-        display: none !important;
-    }
-    .hamburger {
-        display: flex !important;
-    }
-}
-@media (min-width: 769px) {
-    .hamburger {
-        display: none !important;
-    }
-    .mobile-menu, .mobile-menu-overlay {
-        display: none !important;
-    }
 }
 
 /* ---- 减少动画 (无障碍) ---- */
