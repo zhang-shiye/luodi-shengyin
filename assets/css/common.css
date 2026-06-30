@@ -1,0 +1,198 @@
+/* ==============================================
+   《落地生银》官网 — 共享样式表
+   统一设计令牌、动画、组件样式
+   ============================================== */
+
+:root {
+    --color-primary: #1e3a8a;
+    --color-primary-light: #3b82f6;
+    --color-green: #16a34a;
+    --color-green-light: #22c55e;
+    --color-danger: #dc2626;
+    --color-gold: #fbbf24;
+    --color-dark: #0f172a;
+    --color-bg: #f8fafc;
+    --shadow-card: 0 4px 6px -1px rgba(0, 0, 0, 0.08), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+    --shadow-hover: 0 20px 25px -5px rgba(0, 0, 0, 0.12), 0 8px 10px -6px rgba(0, 0, 0, 0.08);
+}
+
+/* ---- 基础 ---- */
+* {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Noto Sans SC', sans-serif;
+    background-color: var(--color-bg);
+    color: #1e293b;
+    line-height: 1.8;
+    padding-top: 5rem;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* ---- 自定义滚动条 ---- */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #e2e8f0;
+}
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, var(--color-primary), var(--color-primary-light));
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-primary-light);
+}
+
+/* ---- 滚动揭示动画 ---- */
+.reveal {
+    opacity: 0;
+    transform: translateY(60px);
+    transition: opacity 0.8s cubic-bezier(0.5, 0, 0, 1), transform 0.8s cubic-bezier(0.5, 0, 0, 1);
+}
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+.delay-100 { transition-delay: 100ms; }
+.delay-200 { transition-delay: 200ms; }
+.delay-300 { transition-delay: 300ms; }
+.delay-400 { transition-delay: 400ms; }
+
+/* ---- 文字高亮 ---- */
+.highlight-text {
+    background: linear-gradient(120deg, rgba(22, 163, 74, 0.2) 0%, rgba(22, 163, 74, 0.2) 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 40%;
+    background-position: 0 88%;
+}
+.highlight-gold {
+    background: linear-gradient(120deg, rgba(251, 191, 36, 0.4) 0%, rgba(251, 191, 36, 0.4) 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 40%;
+    background-position: 0 88%;
+}
+
+/* ---- 装饰性背景图案 ---- */
+.dot-pattern {
+    background-image: radial-gradient(circle, rgba(255,255,255,0.08) 1px, transparent 1px);
+    background-size: 24px 24px;
+}
+
+/* ---- 返回顶部按钮 ---- */
+.back-to-top {
+    position: fixed;
+    bottom: 2.5rem;
+    right: 2.5rem;
+    z-index: 60;
+    width: 3.5rem;
+    height: 3.5rem;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px) scale(0.8);
+    transition: all 0.4s cubic-bezier(0.5, 0, 0, 1);
+    box-shadow: 0 10px 25px rgba(30, 58, 138, 0.4);
+}
+.back-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0) scale(1);
+}
+.back-to-top:hover {
+    transform: translateY(-4px) scale(1.1);
+    box-shadow: 0 14px 30px rgba(30, 58, 138, 0.5);
+}
+
+/* ---- 移动端菜单 ---- */
+.mobile-menu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobile-menu.open {
+    max-height: 500px;
+}
+
+/* ---- 导航栏链接动画 ---- */
+.nav-link {
+    position: relative;
+    overflow: hidden;
+}
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 3px;
+    background: var(--color-primary-light);
+    border-radius: 2px;
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+}
+.nav-link:not(.nav-active):hover::after {
+    width: 60%;
+}
+
+/* ---- 卡片悬浮效果增强 ---- */
+.card-hover {
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.card-hover:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-hover);
+}
+
+/* ---- 按钮 ---- */
+.btn-primary {
+    background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
+    color: white;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 25px rgba(30, 58, 138, 0.35);
+}
+.btn-primary:hover {
+    transform: scale(1.05) translateY(-2px);
+    box-shadow: 0 15px 35px rgba(30, 58, 138, 0.45);
+}
+
+/* ---- 章节标题装饰线 ---- */
+.section-eyebrow {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    border-radius: 9999px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+}
+
+/* ---- 响应式微调 ---- */
+@media (max-width: 768px) {
+    .back-to-top {
+        bottom: 1.5rem;
+        right: 1.5rem;
+        width: 3rem;
+        height: 3rem;
+    }
+}
+
+/* ---- 减少动画 (无障碍) ---- */
+@media (prefers-reduced-motion: reduce) {
+    .reveal {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+    * {
+        scroll-behavior: auto;
+    }
+}

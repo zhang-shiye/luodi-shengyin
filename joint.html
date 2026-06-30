@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>标杆联营开店 - 安徽社家长护险服务站联营计划</title>
+    <meta name="description" content="技术入股 · 深度陪跑 · 筛选各地城市合伙人。你出本地政企资源，我们出品牌、系统、运营团队与精准客源。">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bizblue: '#1e3a8a', bizblueLight: '#3b82f6',
+                        lifegreen: '#16a34a', lifegreenLight: '#22c55e',
+                        danger: '#dc2626', gold: '#fbbf24',
+                        purpleDark: '#4c1d95', bgGray: '#f8fafc'
+                    },
+                    fontFamily: { sans: ['"Noto Sans SC"', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/common.css">
+</head>
+<body class="overflow-x-hidden selection:bg-bizblue selection:text-white">
+
+    <!-- ====== 全局导航栏 ====== -->
+    <nav class="fixed top-0 left-0 w-full bg-white/95 backdrop-blur-md z-50 shadow-sm border-b border-gray-100">
+        <div class="max-w-[1500px] mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2 shrink-0 hover:opacity-80 transition">
+                <i class="fa-solid fa-leaf text-lifegreen text-2xl"></i>
+                <span class="text-bizblue text-2xl font-black tracking-widest">落地生银</span>
+            </a>
+            <div class="hidden lg:flex items-center gap-1 text-base font-bold">
+                <a href="index.html" class="nav-link px-4 py-2.5 rounded-xl text-gray-600 hover:text-bizblue hover:bg-blue-50 transition flex items-center">
+                    <i class="fa-solid fa-house mr-2"></i>社群首页
+                </a>
+                <a href="service.html" class="nav-link px-4 py-2.5 rounded-xl text-gray-600 hover:text-bizblue hover:bg-blue-50 transition flex items-center">
+                    <i class="fa-solid fa-building-user mr-2"></i>长护险B端服务
+                </a>
+                <a href="camp.html" class="nav-link px-4 py-2.5 rounded-xl text-gray-600 hover:text-bizblue hover:bg-blue-50 transition flex items-center">
+                    <i class="fa-solid fa-chalkboard-user mr-2"></i>线下实操营
+                </a>
+                <a href="joint.html" class="nav-link nav-active px-4 py-2.5 rounded-xl bg-bizblue text-white shadow-md flex items-center">
+                    <i class="fa-solid fa-handshake-angle mr-2"></i>标杆联营开店
+                </a>
+            </div>
+            <button id="mobileMenuBtn" class="lg:hidden w-11 h-11 flex items-center justify-center rounded-xl text-bizblue hover:bg-blue-50 transition">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+        </div>
+        <div id="mobileMenu" class="mobile-menu lg:hidden bg-white border-t border-gray-100">
+            <div class="px-6 py-4 space-y-2 font-bold">
+                <a href="index.html" class="block px-4 py-3 rounded-xl text-gray-600 hover:bg-blue-50"><i class="fa-solid fa-house mr-2"></i>社群首页</a>
+                <a href="service.html" class="block px-4 py-3 rounded-xl text-gray-600 hover:bg-blue-50"><i class="fa-solid fa-building-user mr-2"></i>长护险B端服务</a>
+                <a href="camp.html" class="block px-4 py-3 rounded-xl text-gray-600 hover:bg-blue-50"><i class="fa-solid fa-chalkboard-user mr-2"></i>线下实操营</a>
+                <a href="joint.html" class="block px-4 py-3 rounded-xl bg-bizblue text-white"><i class="fa-solid fa-handshake-angle mr-2"></i>标杆联营开店</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ====== 第一屏：Hero ====== -->
+    <section class="min-h-[90vh] flex items-center justify-center relative bg-gradient-to-br from-blue-900 via-bizblue to-blue-800 text-white px-6 py-20 overflow-hidden">
+        <div class="absolute inset-0 dot-pattern opacity-10"></div>
+        <div class="absolute right-0 top-0 w-96 h-96 bg-lifegreen opacity-20 rounded-full blur-3xl transform translate-x-1/2 -translate-y-1/2"></div>
+        <div class="max-w-7xl mx-auto text-center z-10 reveal mt-10">
+            <div class="inline-block px-6 py-2.5 rounded-full bg-white/10 border-2 border-lifegreenLight text-lifegreenLight text-lg font-bold mb-8 backdrop-blur shadow-lg">
+                <i class="fa-solid fa-medal mr-2"></i>社群标杆方【安徽社家】定向招募
+            </div>
+            <h1 class="text-5xl md:text-7xl font-black tracking-tight leading-tight mb-8 drop-shadow-lg">
+                长护险服务站<span class="text-gold">联营计划</span>
+            </h1>
+            <p class="text-2xl md:text-3xl font-bold text-blue-100 mb-8 leading-snug">
+                技术入股 · 深度陪跑 · <span class="text-gold underline decoration-wavy decoration-red-500">筛选各地城市合伙人</span>
+            </p>
+            <div class="inline-block mt-4 bg-white/10 border border-white/20 backdrop-blur-md px-8 md:px-12 py-8 rounded-3xl shadow-2xl text-left card-hover">
+                <p class="text-2xl font-black text-white mb-4 border-b border-white/20 pb-4">
+                    <i class="fa-solid fa-location-crosshairs text-gold mr-2"></i>专属定向群体：【领航圈】属地渠道老板
+                </p>
+                <ul class="text-lg font-bold text-gray-200 mt-4 space-y-3">
+                    <li class="flex items-start"><div class="w-8 shrink-0 flex justify-center mt-1"><i class="fa-solid fa-check text-lifegreenLight text-xl"></i></div><div class="ml-2 leading-snug">你出本地政企资源与启动资金，搞定属地公关。</div></li>
+                    <li class="flex items-start"><div class="w-8 shrink-0 flex justify-center mt-1"><i class="fa-solid fa-check text-lifegreenLight text-xl"></i></div><div class="ml-2 leading-snug">我们出<strong class="text-gold">品牌、系统、运营团队与精准客源</strong>！</div></li>
+                    <li class="flex items-start"><div class="w-8 shrink-0 flex justify-center mt-1"><i class="fa-solid fa-handshake text-gold text-xl"></i></div><div class="ml-2 leading-snug">强强联手，直接入围本地长护险定点机构！</div></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== 第二屏：准入审核机制 ====== -->
+    <section class="py-24 px-6 bg-gray-50 border-b border-gray-200">
+        <div class="max-w-7xl mx-auto reveal">
+            <div class="text-center mb-16">
+                <span class="section-eyebrow bg-red-100 text-danger">Strict Screening</span>
+                <h2 class="text-4xl md:text-5xl font-black text-bizblue mt-6">不是谁都能联营！合伙人严苛准入标准</h2>
+            </div>
+            <div class="bg-white rounded-3xl p-8 md:p-12 shadow-xl border-t-8 border-danger relative overflow-hidden">
+                <div class="absolute top-10 right-10 opacity-10"><i class="fa-solid fa-file-signature text-9xl text-danger"></i></div>
+                <p class="text-xl font-bold text-gray-700 leading-relaxed mb-10 relative z-10">
+                    为了保障区域长护险业务合规落地，【安徽社家】拒绝盲目加盟。<br>
+                    所有意向合伙人，必须通过<span class="text-danger font-black mx-2">《企业综合实力与属地资源尽调》</span>，具备以下三项核心能力，方可入局：
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative z-10">
+                    <div class="bg-red-50 p-8 rounded-2xl border border-red-100 card-hover">
+                        <div class="w-14 h-14 bg-red-100 text-danger rounded-xl flex items-center justify-center text-2xl mb-4"><i class="fa-solid fa-building-columns"></i></div>
+                        <h4 class="text-xl font-black text-gray-800 mb-4">属地政企关系底座</h4>
+                        <p class="text-base font-bold text-gray-600">在本地拥有医保局、民政、卫健委等部门的对接资源，或具备街道社区的深度下沉触点。</p>
+                    </div>
+                    <div class="bg-blue-50 p-8 rounded-2xl border border-blue-100 card-hover">
+                        <div class="w-14 h-14 bg-blue-100 text-bizblue rounded-xl flex items-center justify-center text-2xl mb-4"><i class="fa-solid fa-sack-dollar"></i></div>
+                        <h4 class="text-xl font-black text-gray-800 mb-4">健康的资金实力</h4>
+                        <p class="text-base font-bold text-gray-600">具备合规资质与办公场地，且能根据业务体量投入 20万-300万 不等的专项项目流动资金。</p>
+                    </div>
+                    <div class="bg-green-50 p-8 rounded-2xl border border-green-100 card-hover">
+                        <div class="w-14 h-14 bg-green-100 text-lifegreen rounded-xl flex items-center justify-center text-2xl mb-4"><i class="fa-solid fa-scale-unbalanced"></i></div>
+                        <h4 class="text-xl font-black text-gray-800 mb-4">风险兜底与履约能力</h4>
+                        <p class="text-base font-bold text-gray-600">非短期投机。有真实康养/生活服务产业背景，能应对医保考核与资金回款周期的考验。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== 第三屏：三大联营方案 ====== -->
+    <section class="py-24 px-6 bg-slate-900 text-white relative">
+        <div class="absolute inset-0 dot-pattern opacity-20"></div>
+        <div class="max-w-[1400px] mx-auto reveal relative z-10">
+            <div class="text-center mb-20">
+                <span class="section-eyebrow bg-white/10 text-gold border border-gold/30">Cooperation Models</span>
+                <h2 class="text-4xl md:text-5xl font-black text-white mt-6">三大联营方案与赋能明细</h2>
+                <p class="text-xl text-gray-400 mt-4 font-medium">根据您的属地资源盘子，选择最匹配的陪跑模式</p>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- 方案一 -->
+                <div class="bg-white/10 rounded-3xl p-8 border border-gray-600 shadow-xl flex flex-col card-hover">
+                    <h3 class="text-2xl font-black text-gray-300 mb-2">轻量陪跑版</h3>
+                    <div class="text-4xl font-black text-white mb-8 border-b border-gray-600 pb-6">¥ 1.98 万</div>
+                    <ul class="space-y-4 text-lg font-bold text-gray-300 flex-1 mb-8">
+                        <li class="flex items-start"><div class="w-7 shrink-0 flex justify-center mt-1.5"><i class="fa-solid fa-copyright text-gray-400"></i></div><div class="ml-2">【品牌与合规】品牌授权、合规指导、长护险运营体系与SOP全套输出。</div></li>
+                        <li class="flex items-start"><div class="w-7 shrink-0 flex justify-center mt-1.5"><i class="fa-solid fa-desktop text-gray-400"></i></div><div class="ml-2">【系统与培训】定点申报系统指导、医保结算支持、管理与护理人员线上培训。</div></li>
+                        <li class="flex items-start"><div class="w-7 shrink-0 flex justify-center mt-1.5"><i class="fa-solid fa-users text-gold text-xl"></i></div><div class="ml-2 text-gold">【客源直接赋能】<br>提供 50-100 条 线上高意向客户资源！</div></li>
+                    </ul>
+                    <div class="bg-gray-800 p-4 rounded-xl text-center font-bold text-gray-400 text-sm">适合初步试水，需自建本地团队</div>
+                </div>
+                <!-- 方案二 (主推) -->
+                <div class="bg-blue-900/40 rounded-3xl p-8 border-2 border-bizblueLight shadow-[0_0_30px_rgba(59,130,246,0.3)] flex flex-col card-hover relative">
+                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-bizblueLight text-white px-5 py-1.5 rounded-full font-black text-sm shadow-lg"><i class="fa-solid fa-fire"></i> 核心主推·深度驻点</div>
+                    <h3 class="text-2xl font-black text-blue-300 mb-2 mt-4">深度驻点版</h3>
+                    <div class="text-4xl font-black text-white mb-8 border-b border-blue-500/50 pb-6">¥ 5.98 万</div>
+                    <ul class="space-y-4 text-lg font-bold text-gray-200 flex-1 mb-8">
+                        <li class="flex items-start"><div class="w-7 shrink-0 flex justify-center mt-1.5"><i class="fa-solid fa-check-double text-blue-400"></i></div><div class="ml-2">包含 1.98 万轻量版 所有品牌、系统、培训与合规指导权益。</div></li>
+                        <li class="flex items-start"><div class="w-7 shrink-0 flex justify-center mt-1.5"><i class="fa-solid fa-users text-gold text-xl"></i></div><div class="ml-2 text-gold">【客源超级加倍】<br>提供 200-300 条 线上+线下客户资源！</div></li>
+                        <li class="flex items-start"><div class="w-7 shrink-0 flex justify-center mt-1.5"><i class="fa-solid fa-user-tie text-lifegreenLight text-xl"></i></div><div class="ml-2 text-lifegreenLight">【技术团队驻点入股】<br>指派 1名专业运营人员线下全程驻点陪跑，包揽前期遴选与获客！</div></li>
+                    </ul>
+                    <div class="bg-blue-600 p-4 rounded-xl text-center font-bold text-white shadow-inner text-sm">强力推荐：补齐人力短板，快速回本</div>
+                </div>
+                <!-- 方案三 -->
+                <div class="bg-gradient-to-br from-yellow-900/40 to-red-900/40 rounded-3xl p-8 border border-gold/50 shadow-xl flex flex-col card-hover">
+                    <h3 class="text-2xl font-black text-gold mb-2">全案托管版</h3>
+                    <div class="text-3xl md:text-4xl font-black text-white mb-8 border-b border-gold/30 pb-6">¥ 19.8 - 100 万</div>
+                    <ul class="space-y-4 text-lg font-bold text-gray-300 flex-1 mb-8">
+                        <li class="flex items-start"><div class="w-7 shrink-0 flex justify-center mt-1.5"><i class="fa-solid fa-crown text-gold"></i></div><div class="ml-2">顶级大盘玩法，覆盖市/区级规模化运营，含全套最高规格系统支持。</div></li>
+                        <li class="flex items-start"><div class="w-7 shrink-0 flex justify-center mt-1.5"><i class="fa-solid fa-users text-gold text-xl"></i></div><div class="ml-2 text-gold">【海量大盘客源】<br>提供 500-2000 条 线下+线上客户资源。</div></li>
+                        <li class="flex items-start"><div class="w-7 shrink-0 flex justify-center mt-1.5"><i class="fa-solid fa-people-group text-danger text-xl"></i></div><div class="ml-2 text-red-400">【兵团式入驻托管】<br>派驻 2-10名 专业运营人员，视规模可直接"全流程托管运营"！</div></li>
+                    </ul>
+                    <div class="bg-red-900/60 border border-red-500/50 p-4 rounded-xl text-center font-bold text-red-200 text-sm">适合资金雄厚、追求规模化垄断的资方</div>
+                </div>
+            </div>
+            <div class="mt-12 text-center text-xl font-bold text-gray-400">
+                <i class="fa-solid fa-gift text-danger mr-2"></i>专属福利：7月前敲定合作，额外赠送<span class="text-white">"养老消费券项目运营全程线上/线下指导"</span>！
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== 第四屏：合作落地四步走 ====== -->
+    <section class="py-24 px-6 bg-white relative overflow-hidden">
+        <div class="max-w-6xl mx-auto reveal bg-gradient-to-b from-blue-50 to-white border-2 border-blue-100 rounded-3xl p-8 md:p-12 shadow-xl relative z-10 text-center">
+            <div class="text-center mb-12">
+                <span class="section-eyebrow bg-blue-100 text-bizblue">How to Join</span>
+                <h2 class="text-4xl md:text-5xl font-black text-bizblue mt-6">如何申请成为【安徽社家】联营合伙人？</h2>
+            </div>
+            <div class="flex flex-col md:flex-row justify-between items-center gap-8 md:gap-0 text-lg font-bold text-gray-700 mb-16 relative">
+                <div class="hidden md:block absolute top-1/2 left-[12%] right-[12%] h-1 bg-gray-200 -z-10 -translate-y-1/2"></div>
+                <div class="flex flex-col items-center bg-white p-6 rounded-2xl shadow-md border border-gray-100 w-56 z-10 card-hover">
+                    <div class="w-16 h-16 bg-blue-100 text-bizblue rounded-full flex items-center justify-center text-3xl mb-4"><i class="fa-solid fa-file-lines"></i></div>
+                    <span>第一步：<br>提交《资质调卷》</span>
+                </div>
+                <div class="flex flex-col items-center bg-white p-6 rounded-2xl shadow-md border border-gray-100 w-56 z-10 card-hover">
+                    <div class="w-16 h-16 bg-yellow-100 text-gold rounded-full flex items-center justify-center text-3xl mb-4"><i class="fa-solid fa-magnifying-glass"></i></div>
+                    <span>第二步：<br>官方尽职核查评估</span>
+                </div>
+                <div class="flex flex-col items-center bg-white p-6 rounded-2xl shadow-md border border-gray-100 w-56 z-10 card-hover">
+                    <div class="w-16 h-16 bg-green-100 text-lifegreen rounded-full flex items-center justify-center text-3xl mb-4"><i class="fa-solid fa-file-contract"></i></div>
+                    <span>第三步：<br>签订联营协议打款</span>
+                </div>
+                <div class="flex flex-col items-center bg-white p-6 rounded-2xl shadow-md border border-gray-100 w-56 z-10 card-hover">
+                    <div class="w-16 h-16 bg-red-100 text-danger rounded-full flex items-center justify-center text-3xl mb-4"><i class="fa-solid fa-rocket"></i></div>
+                    <span>第四步：<br>团队入场业务起盘</span>
+                </div>
+            </div>
+            <div class="text-center">
+                <p class="text-2xl font-black text-danger mb-6 animate-pulse">每个城市仅筛选 1-2 名优质合伙人，先到先锁区！</p>
+                <button class="btn-primary text-2xl font-black py-5 px-16 rounded-full flex items-center justify-center mx-auto">
+                    <span>立即索取《合作企业调查问卷》</span><i class="fa-solid fa-arrow-right ml-3"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== 返回顶部 ====== -->
+    <div id="backToTop" class="back-to-top"><i class="fa-solid fa-arrow-up"></i></div>
+
+    <!-- ====== 页脚 ====== -->
+    <footer class="bg-slate-900 text-gray-400 py-12">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+                <div class="flex items-center gap-3">
+                    <i class="fa-solid fa-leaf text-lifegreen text-3xl"></i>
+                    <span class="text-white text-2xl font-black tracking-widest">落地生银</span>
+                </div>
+                <div class="flex flex-wrap justify-center gap-6 text-base font-medium">
+                    <a href="index.html" class="hover:text-white transition">社群首页</a>
+                    <a href="service.html" class="hover:text-white transition">长护险B端服务</a>
+                    <a href="camp.html" class="hover:text-white transition">线下实操营</a>
+                    <a href="joint.html" class="hover:text-white transition">标杆联营开店</a>
+                </div>
+            </div>
+            <div class="border-t border-white/10 mt-8 pt-8 text-center text-sm">
+                <p>&copy; 2026 《落地生银》银发经济创业实战社群. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/common.js"></script>
+</body>
+</html>
